@@ -14,7 +14,13 @@ int main (void) {
 	total_alunos = alunos;
 	
 	while(alunos > 0) {
-		printf("\n\n<<< ALUNO %d >>>", alunos);
+		
+		if(alunos <= 1) {
+			printf("\n\n<<< ULTIMO ALUNO >>>");
+			
+		} else {
+			printf("\n\n<<< faltam %d alunos >>>", alunos);			
+		}
 		
 		printf("\n\nDigite a NP1: ");
 		scanf("%f", &np1);
